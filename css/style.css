@@ -1,0 +1,143 @@
+* {  /* Tirar o padding e margin da pagina */
+    padding: 0; 
+    margin: 0;
+}
+    
+body {
+    width: 100vw;  /* Definir a largura da pagina */
+    height: 100vh;  /* Altura da pagina */
+    font-family: "Poppins", sans-serif;  /* fonte das letras */
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #05072F;
+    display: flex;
+    flex-direction: row;  /* Display flex em linha */
+    justify-content: space-between;  /* Os elementos ficarem divididos */
+    align-items: center;  /* alinhar os elementos no centro */
+    padding: 40px 2%;  /* 40px cima e baixo e 2% nas laterais */
+}
+
+.logo h1{  /* FECAFMUSIC */
+    font-size: 30px;  /* tamanho da fonte */
+    color: #ffffff;  /* cor da letra */
+    font-weight: bold;  /* negrito */
+    cursor: pointer;  /* mudar o cursor do mouse quando estiver em cima */
+}
+
+.logo .txt_fecaf {
+    color: #CF092D;  /* mudar somente a cor da FECAF */
+}
+
+nav a{  /* menu de navegação central */
+    padding: 0 15px;  /* 0px cime e baixo e 15px nas laterais */
+    color: #ffffff; /* cor da letra */
+    text-decoration: none;  /* sem deconração "underline" */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;  /* quando o cursor estiver sobre o menu, colocar underline */
+}
+
+.help a {  /* link lateral superior direita */
+    color: #ffffff;
+    padding: 15px;  /* 15px cima e baixo e tambem nas laterais */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help a:hover {  /* quando o cursor estiver sobre os link */
+    text-decoration: underline; /* colocar underline */
+}
+
+.help .help_barra {
+    color: #CF092D; /* a barra ficar da cor vermelho */
+}
+
+.help .account {
+    color: #CF092D;
+}
+
+/* Corpo da pagina */
+
+main {
+    background-color: #01041B;
+    display: flex;
+    flex-direction: row;  /* flex em linha */
+}
+
+main img {  /* imagem */
+    width: 680px;  /* largura */
+    height: 475px; /* altura */
+}
+
+main .txt_music {
+    color: #CF092D;  /* letra musica em vermelho */
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 75px;
+}
+
+.esquerda_main {
+    padding: 20px;  /* padding da classe */
+    margin-left: 25px;  /* margem esquerdo da classe */
+}
+
+main p {
+    color: #ffffff;  /* cor do paragrafo */
+    margin-top: 25px;  /* margem superior do paragrafo */
+    text-align: justify;  /* texto justificado */
+}
+
+.dounload, .free_trial {  /* 2 botões */
+    margin-top: 30px;  /* margem superior */
+    width: 200px; /* largura */
+    height: 60px;  /* altura */
+    top: 837px;  /* espaço superior */
+    left: 89px;  /* espaço esquerdo */
+    border-radius: 45px; /* bordas arredondadas */
+    color: #ffffff;  /* cor do texto */
+    border: none;
+    cursor: pointer;  /* cursor */
+    transition: .3s;  /* tempo de transição para fazer a animação */
+    font-size: 18px;  /* tamanho do texto */
+}
+
+.dounload {
+    background-color: #CF092D;  /* cor de fundo */
+    margin-right: 30px;  /* espassamento entre os dois botões */
+}
+
+.dounload:hover { /* quando o cursor estiver sobre o botão */
+    background-color: #ffffff; /* fundo branco */
+    color: #CF092D;  /* texto vermelho */
+    border: 3px solid #CF092D;  /* borda vermelho */
+}
+
+.free_trial {
+    background-color: #410093;  /* cor de fundo */
+}
+
+.free_trial:hover {  /* quando o cursor estiver sobre o botão */
+    background-color: #ffffff;  /* fundo branco */
+    color: #410093;  /* texto azul */
+    border: 3px solid #410093;  /* borda azul */
+}
+
+/* Rodape */
+
+footer {
+    display: flex;  /* só chamei o display flex para poder usar o align-items */
+    align-items: center;  /* alinhar o texto no centro */
+    justify-content: center;  /* deixar o texto no centro */
+    background-color: #05072F;  /* cor de fundo */
+    height: 62.5px;  /* altura */
+    color: #ffffff;  /* cor texto */
+    font-weight: bolder;  /* negrito */
+    font-size: 20px;  /* tamanho do texto */
+}
