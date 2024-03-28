@@ -141,3 +141,68 @@ footer {
     font-weight: bolder;  /* negrito */
     font-size: 20px;  /* tamanho do texto */
 }
+
+@media (max-width: 1024px) {
+    body, html {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        background-color: #05072F;
+        display: flex;
+        flex-direction: column;  /* Display flex em linha */
+        align-items: center;  /* alinhar os elementos no centro */
+        padding: 20px 0%;  /* 40px cima e baixo e 2% nas laterais */
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    .help {
+        margin-top: 15px;
+    }
+
+    .help a {  /* link lateral superior direita */
+        color: #ffffff;
+        padding: 5px;  /* 15px cima e baixo e tambem nas laterais */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .help .help_barra {
+        color: #CF092D; /* a barra ficar da cor vermelho */
+        display: none;
+    }
+
+    main {
+        background-color: #01041B;
+        display: flex;
+        flex-direction: column;  /* flex em linha */
+    }
+
+    main h1 {
+        color: #ffffff;
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    .esquerda_main {
+        padding: 10px;  /* padding da classe */
+        margin-left: 10px;  /* margem esquerdo da classe */
+    }
+
+    main img {  /* imagem */
+        width: 90%;  /* largura */
+        height: 300px; /* altura */
+        margin-top: 20px;
+    }
+
+    main p {
+        color: #ffffff;  /* cor do paragrafo */
+        margin-top: 25px;  /* margem superior do paragrafo */
+        text-align: left;
+    }
+
+}
