@@ -169,6 +169,7 @@ footer {
     .list i{
         color: #ffffff;
         font-size: 35px;
+        cursor: pointer;
     }
 
     .logo h1 {
