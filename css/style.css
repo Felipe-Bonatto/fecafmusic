@@ -1,12 +1,12 @@
-* {  /* Tirar o padding e margin da pagina */
+* { 
     padding: 0; 
     margin: 0;
 }
     
 body {
-    width: 100vw;  /* Definir a largura da pagina */
-    height: 100vh;  /* Altura da pagina */
-    font-family: "Poppins", sans-serif;  /* fonte das letras */
+    width: 100vw;  
+    height: 100vh;  
+    font-family: "Poppins", sans-serif;  
 }
 
 /* Cabeçalho */
@@ -14,47 +14,51 @@ body {
 header {
     background-color: #05072F;
     display: flex;
-    flex-direction: row;  /* Display flex em linha */
-    justify-content: space-between;  /* Os elementos ficarem divididos */
-    align-items: center;  /* alinhar os elementos no centro */
-    padding: 40px 2%;  /* 40px cima e baixo e 2% nas laterais */
+    flex-direction: row;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 40px 2%;  
 }
 
-.logo h1{  /* FECAFMUSIC */
-    font-size: 30px;  /* tamanho da fonte */
-    color: #ffffff;  /* cor da letra */
-    font-weight: bold;  /* negrito */
-    cursor: pointer;  /* mudar o cursor do mouse quando estiver em cima */
+.logo h1{  
+    font-size: 30px;  
+    color: #ffffff;  
+    font-weight: bold;  
+    cursor: pointer;  
+}
+
+.list {
+    display: none;
 }
 
 .logo .txt_fecaf {
-    color: #CF092D;  /* mudar somente a cor da FECAF */
+    color: #CF092D;  
 }
 
-nav a{  /* menu de navegação central */
-    padding: 0 15px;  /* 0px cime e baixo e 15px nas laterais */
-    color: #ffffff; /* cor da letra */
-    text-decoration: none;  /* sem deconração "underline" */
+nav a{  
+    padding: 0 15px;  
+    color: #ffffff; 
+    text-decoration: none;  
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;  /* quando o cursor estiver sobre o menu, colocar underline */
+    text-decoration: underline;  
 }
 
-.help a {  /* link lateral superior direita */
+.help a {  
     color: #ffffff;
-    padding: 15px;  /* 15px cima e baixo e tambem nas laterais */
+    padding: 15px;  
     text-decoration: none;
     font-weight: bold;
 }
 
-.help a:hover {  /* quando o cursor estiver sobre os link */
-    text-decoration: underline; /* colocar underline */
+.help a:hover {  
+    text-decoration: underline; 
 }
 
 .help .help_barra {
-    color: #CF092D; /* a barra ficar da cor vermelho */
+    color: #CF092D; 
 }
 
 .help .account {
@@ -66,16 +70,16 @@ nav a:hover {
 main {
     background-color: #01041B;
     display: flex;
-    flex-direction: row;  /* flex em linha */
+    flex-direction: row;  
 }
 
-main img {  /* imagem */
-    width: 680px;  /* largura */
-    height: 475px; /* altura */
+main img {  
+    width: 680px;  
+    height: 475px; 
 }
 
 main .txt_music {
-    color: #CF092D;  /* letra musica em vermelho */
+    color: #CF092D;  
 }
 
 main h1 {
@@ -84,65 +88,65 @@ main h1 {
 }
 
 .esquerda_main {
-    padding: 20px;  /* padding da classe */
-    margin-left: 25px;  /* margem esquerdo da classe */
+    padding: 20px;  
+    margin-left: 25px;  
 }
 
 main p {
-    color: #ffffff;  /* cor do paragrafo */
-    margin-top: 25px;  /* margem superior do paragrafo */
-    text-align: justify;  /* texto justificado */
+    color: #ffffff;  
+    margin-top: 25px;  
+    text-align: justify;  
 }
 
-.dounload, .free_trial {  /* 2 botões */
-    margin-top: 30px;  /* margem superior */
-    width: 200px; /* largura */
-    height: 60px;  /* altura */
-    top: 837px;  /* espaço superior */
-    left: 89px;  /* espaço esquerdo */
-    border-radius: 45px; /* bordas arredondadas */
-    color: #ffffff;  /* cor do texto */
+.dounload, .free_trial {  
+    margin-top: 30px; 
+    width: 200px; 
+    height: 60px;  
+    top: 837px;  
+    left: 89px;  
+    border-radius: 45px; 
+    color: #ffffff;  
     border: none;
-    cursor: pointer;  /* cursor */
-    transition: .3s;  /* tempo de transição para fazer a animação */
-    font-size: 18px;  /* tamanho do texto */
+    cursor: pointer;  
+    transition: .3s;  
+    font-size: 18px;  
 }
 
 .dounload {
-    background-color: #CF092D;  /* cor de fundo */
-    margin-right: 30px;  /* espassamento entre os dois botões */
+    background-color: #CF092D;  
+    margin-right: 30px;  
 }
 
-.dounload:hover { /* quando o cursor estiver sobre o botão */
-    background-color: #ffffff; /* fundo branco */
-    color: #CF092D;  /* texto vermelho */
-    border: 3px solid #CF092D;  /* borda vermelho */
+.dounload:hover { 
+    background-color: #ffffff; 
+    color: #CF092D;  
+    border: 3px solid #CF092D;  
 }
 
 .free_trial {
-    background-color: #410093;  /* cor de fundo */
+    background-color: #410093;  
 }
 
-.free_trial:hover {  /* quando o cursor estiver sobre o botão */
-    background-color: #ffffff;  /* fundo branco */
-    color: #410093;  /* texto azul */
-    border: 3px solid #410093;  /* borda azul */
+.free_trial:hover {  
+    background-color: #ffffff; 
+    color: #410093;  
+    border: 3px solid #410093;  
 }
 
 /* Rodape */
 
 footer {
-    display: flex;  /* só chamei o display flex para poder usar o align-items */
-    align-items: center;  /* alinhar o texto no centro */
-    justify-content: center;  /* deixar o texto no centro */
-    background-color: #05072F;  /* cor de fundo */
-    height: 62.5px;  /* altura */
-    color: #ffffff;  /* cor texto */
-    font-weight: bolder;  /* negrito */
-    font-size: 20px;  /* tamanho do texto */
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    background-color: #05072F;  
+    height: 62.5px;  
+    color: #ffffff; 
+    font-weight: bolder;  
+    font-size: 20px;  
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 912px) {
     body, html {
         width: 100vw;
         height: 100vh;
@@ -151,35 +155,50 @@ footer {
     header {
         background-color: #05072F;
         display: flex;
-        flex-direction: column;  /* Display flex em linha */
-        align-items: center;  /* alinhar os elementos no centro */
-        padding: 20px 0%;  /* 40px cima e baixo e 2% nas laterais */
+        flex-direction: row;  
+        justify-content: center;
+        align-items: center;
+        padding: 30px 2%;
+        gap: 60px;
+    }
+
+    .list {
+        display: block;
+    }
+
+    .list i{
+        color: #ffffff;
+        font-size: 35px;
+    }
+
+    .logo h1 {
+        font-size: 35px;
     }
 
     header nav {
-        margin-top: 15px;
+        display: none;
     }
 
     .help {
-        margin-top: 15px;
+        display: none;
     }
 
-    .help a {  /* link lateral superior direita */
+    .help a {  
         color: #ffffff;
-        padding: 5px;  /* 15px cima e baixo e tambem nas laterais */
+        padding: 5px;  
         text-decoration: none;
         font-weight: bold;
     }
 
     .help .help_barra {
-        color: #CF092D; /* a barra ficar da cor vermelho */
+        color: #CF092D; 
         display: none;
     }
 
     main {
         background-color: #01041B;
         display: flex;
-        flex-direction: column;  /* flex em linha */
+        flex-direction: column;  
     }
 
     main h1 {
@@ -189,19 +208,19 @@ footer {
     }
 
     .esquerda_main {
-        padding: 10px;  /* padding da classe */
-        margin-left: 10px;  /* margem esquerdo da classe */
+        padding: 10px;  
+        margin-left: 10px;  
     }
 
-    main img {  /* imagem */
-        width: 90%;  /* largura */
-        height: 300px; /* altura */
+    main img {  
+        width: 90%;  
+        height: 300px; 
         margin-top: 20px;
     }
 
     main p {
-        color: #ffffff;  /* cor do paragrafo */
-        margin-top: 25px;  /* margem superior do paragrafo */
+        color: #ffffff;  
+        margin-top: 25px;  
         text-align: left;
     }
 
